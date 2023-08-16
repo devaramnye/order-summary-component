@@ -112,11 +112,6 @@ body {
     width: 88%;
   }
 
-    .main__plan__img {}
-
-    .main__plan__change {
-    }
-
   .main__payment {
     background: var(--bright-blue);
     color: white;
