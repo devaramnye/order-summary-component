@@ -53,14 +53,13 @@ body {
 \*------------------------------------*/
 
 .container {
-  max-width: 23.438rem;
   border-radius: 20px;
   overflow: hidden; /* [1] */
 }
 
 
 .container--color { background: white; }
-.container--width { max-width: 20rem; width: 90%; }
+.container--width { width: 90%; max-width: 23.438rem; }
 
 
 
@@ -113,13 +112,9 @@ body {
     width: 88%;
   }
 
-    .main__plan__img {
-      width: 100%;
-      margin-right: 1rem;
-    }
+    .main__plan__img {}
 
     .main__plan__change {
-      margin-left: 2rem;
     }
 
   .main__payment {
