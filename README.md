@@ -1,1 +1,1 @@
-[https://devaram.github.io/order-summary-component]
+[https://devaramnye.github.io/order-summary-component]
