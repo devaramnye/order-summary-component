@@ -1,1 +1,0 @@
-[https://devaramnye.github.io/order-summary-component]
