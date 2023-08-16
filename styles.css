@@ -39,6 +39,11 @@ body {
   min-height: 100vh; /* [1] */
   background: #ececec;
   font-family: 'Red Hat Display', sans-serif;
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 
@@ -55,6 +60,7 @@ body {
 .container {
   border-radius: 20px;
   overflow: hidden; /* [1] */
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 
@@ -81,8 +87,7 @@ body {
   #MAIN
  * 1) Centering the whole texts in my main content.
  * 2) Making the items inside .main__plan centering vertically
- * 3) Matching the vertically centering of the img with the rest of the
-      content.
+ * 3) 
 \*------------------------------------*/
 
 .main {
@@ -110,7 +115,14 @@ body {
     border-radius: 10px;
     padding: 1rem;
     width: 88%;
+    justify-content: space-between;
   }
+
+    .main__plan__container {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
 
   .main__payment {
     background: var(--bright-blue);
@@ -120,6 +132,26 @@ body {
     border-radius: 15px;
     font-weight: 700;
     width: 88%;
+    margin-bottom: 1.5rem;
+  }
+
+  .main__payment:hover,
+  .main__payment:focus {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    opacity: 0.9;
+    cursor: pointer;
+  }
+
+  .main__cancel {
+    color: var(--desaturated-blue);
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+
+  .main__cancel:hover,
+  .main__cancel:focus {
+    opacity: 0.7;
+    cursor: pointer;
   }
 
 
@@ -132,12 +164,12 @@ body {
 .main__plan__change__text--color { color: var(--bright-blue); }
 
 
-.main__plan__first--block  { display: block; }
-.main__plan__first--weight { font-weight: 700; }
-.main__plan__first--color  { color: var(--dark-blue); }
+.main__plan__container__text__first--block  { display: block; }
+.main__plan__container__text__first--weight { font-weight: 700; }
+.main__plan__container__text__first--color  { color: var(--dark-blue); }
 
 
-.main__plan__second--color { color: var(--desaturated-blue);}
+.main__plan__container__text__second--color { color: var(--desaturated-blue);}
 
 
 .main__heading--color { color: var(--dark-blue); }
@@ -147,24 +179,11 @@ body {
 
 
 /*------------------------------------*\
-  #FOO
+  #FOOTER
 \*------------------------------------*/
-
-/*------------------------------------*\
-  #FOO
-\*------------------------------------*/
-
-
-
-
-
-
-
-
-
-
 
 footer {
     width: 90%;
     max-width: 20rem;
+    margin-top: 2rem;
 }
