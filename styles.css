@@ -42,8 +42,9 @@ body {
   background-image: url(./images/pattern-background-desktop.svg);
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  background-size: contain;
+  background-color: var(--pale-blue);
+  background-position: top;
 }
 
 
@@ -124,6 +125,11 @@ body {
       gap: 1rem;
     }
 
+      .main__plan__change a:hover { 
+        text-decoration: 0;
+        opacity: 0.9;
+      }
+
   .main__payment {
     background: var(--bright-blue);
     color: white;
@@ -133,11 +139,12 @@ body {
     font-weight: 700;
     width: 88%;
     margin-bottom: 1.5rem;
+    box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.19);
   }
 
   .main__payment:hover,
   .main__payment:focus {
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    box-shadow: 0px 10px 10px 0px rgba(56, 42, 225, 0.19);
     opacity: 0.9;
     cursor: pointer;
   }
@@ -152,6 +159,12 @@ body {
   .main__cancel:focus {
     opacity: 0.7;
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 500px) {
+    body {
+      background-image: url(./images/pattern-background-mobile.svg);
+    }
   }
 
 
